@@ -14,16 +14,16 @@ operating systems.
 
 ## Shortcuts
 
--[Environment Setup Instructions for Linux](#environment-setup-instructions-for-linux)
-  -[Shortcuts](#shortcuts)
-  -[Homebrew](#homebrew)
-  -[SSH Key](#ssh-key)
-  -[Github](#github)
-  -[Clone Repositories](#clone-repositories)
-  -[Python](#python)
-  -[Python Virtual Environment](#python-virtual-environment)
-  -[Dev Environment Aliases](#dev-environment-aliases)
-  -[Optional QOL Tips](#optional-quality-of-life-tips)
+- [Environment Setup Instructions for Linux](#environment-setup-instructions-for-linux)
+  - [Shortcuts](#shortcuts)
+  - [Homebrew](#homebrew)
+  - [SSH Key](#ssh-key)
+  - [Github](#github)
+  - [Clone Repositories](#clone-repositories)
+  - [Python](#python)
+  - [Python Virtual Environment](#python-virtual-environment)
+  - [Dev Environment Aliases](#dev-environment-aliases)
+  - [Optional Quality of Life Tips](#optional-quality-of-life-tips)
 
 ---
 

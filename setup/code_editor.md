@@ -6,12 +6,12 @@ The codebase is designed around Visual Studio Code (VScode), however it is not a
 
 ## Shortcuts
 
-  -[Code Editors](#code-editors)
-  -[Shortcuts](#shortcuts)
-  -[Installation](#installation)
-  -[General Configuration](#general-configuration)
-  -[Extensions](#extensions)
-  -[Recommended Settings](#recommended-settings)
+- [Code Editors](#code-editors)
+  - [Shortcuts](#shortcuts)
+  - [Installation](#installation)
+  - [General Configuration](#general-configuration)
+  - [Extensions](#extensions)
+  - [Recommended Settings](#recommended-settings)
 
 ---
 
