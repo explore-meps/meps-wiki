@@ -1,11 +1,12 @@
 # Environment Setup Instructions for Linux
 
-This guide will walk you through how to set up your machine for local software development. These instructions are
-designed to be executed in order, and assume you have a fresh installation of Ubuntu.
+This guide will walk you through how to set up your machine for MEPS reseach. These instructions are designed to be
+executed in order, and assume you have a fresh installation of Ubuntu.
 
 This guide is written for:
-    - Linux 5.4.0
-    - Ubuntu 20.04.1
+
+  -Linux 5.4.0
+  -Ubuntu 20.04.1
 
 This guide will translate well for researchers using Mac OS systems. There are no plans to extend this guide for windows
 operating systems.
