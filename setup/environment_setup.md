@@ -17,13 +17,13 @@ operating systems.
 - [Environment Setup Instructions for Linux](#environment-setup-instructions-for-linux)
   - [Shortcuts](#shortcuts)
   - [Homebrew](#homebrew)
-  - [SSH Key](#ssh-key)
-  - [Github](#github)
   - [Clone Repositories](#clone-repositories)
   - [Python](#python)
   - [Python Virtual Environment](#python-virtual-environment)
   - [Dev Environment Aliases](#dev-environment-aliases)
   - [Optional Quality of Life Tips](#optional-quality-of-life-tips)
+  - [Optional Contributor SSH Key](#optional-contributor-ssh-key)
+  - [Optional Contributor Github](#optional-contributor-github)
 
 ---
 
@@ -47,58 +47,6 @@ own current versions of glibc and gcc for older distributions of Linux. Run foll
       brew upgrade
       brew install gcc
       brew doctor
-    ```
-
-## SSH Key
-
-Generate your public/private id_rsa key. Skip the file location prompt by pressing enter and make a secure passphrase
-when prompted
-
-    ```shell
-      ssh-keygen -t rsa -C {youremail@email.com}
-    ```
-
-update your ~/.ssh/config file to automatically load keys into the ssh-agent
-
-    ```text
-      Host *
-        AddKeystoAgent yes
-        IdentityFile ~/.ssh/id_rsa
-    ```
-
-Add your SSH private key to the ssh-agent and store your passphrase on your Keychain by typing the following in the
-terminal
-
-    ```shell
-      ssh-add -K ~/.ssh/id_rsa
-    ```
-
-## Github
-
-Ensure that you have received an invitation to the company github account.
-Add your public key to your Github account so you can remotely interact with the companies Github repository.
-
-For each repo, in github naviagte to "Personal Settings", select "SSH and GPG Keys", click "add new SSH key", and add
-a title of your choice (ex: id_rsa). Run the following in your terminal to copy your key and paste in the "Key" section
-on github.
-
-Copy the SSH key to your clipboard.
-
-    ```shell
-      cat ~/.ssh/id_rsa.pub
-    ```
-
-Set up your author info in git
-
-    ```shell
-      git config --global user.name "Your Name"
-      git config --global user.email "you@example.com"
-    ```
-
-Verify your global git configuration
-
-    ```shell
-      git config --global -l
     ```
 
 ## Clone Repositories
@@ -209,4 +157,57 @@ following script outside of a virtual environment:
     "\e[A": history-search-backward
     "\e[B": history-search-forward
     EOF
+    ```
+
+## Optional Contributor SSH Key
+
+Generate your public/private id_rsa key. Skip the file location prompt by pressing enter and make a secure passphrase
+when prompted
+
+    ```shell
+      ssh-keygen -t rsa -C {youremail@email.com}
+    ```
+
+update your ~/.ssh/config file to automatically load keys into the ssh-agent
+
+    ```text
+      Host *
+        AddKeystoAgent yes
+        IdentityFile ~/.ssh/id_rsa
+    ```
+
+Add your SSH private key to the ssh-agent and store your passphrase on your Keychain by typing the following in the
+terminal
+
+    ```shell
+      ssh-add -K ~/.ssh/id_rsa
+    ```
+
+## Optional Contributor Github
+
+If you would like to contribute to the codebase reach out to the owner. Ensure that you have received an invitation to
+the github account. Add your public key to your Github account so you can remotely interact with the companies Github
+epository.
+
+For each repo, in github navigate to "Personal Settings", select "SSH and GPG Keys", click "add new SSH key", and add
+a title of your choice (ex: id_rsa). Run the following in your terminal to copy your key and paste in the "Key" section
+on github.
+
+Copy the SSH key to your clipboard.
+
+    ```shell
+      cat ~/.ssh/id_rsa.pub
+    ```
+
+Set up your author info in git
+
+    ```shell
+      git config --global user.name "Your Name"
+      git config --global user.email "you@example.com"
+    ```
+
+Verify your global git configuration
+
+    ```shell
+      git config --global -l
     ```
