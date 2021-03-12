@@ -14,9 +14,8 @@ operating systems.
 
 ## Shortcuts
 
-  -[Environment Setup Instructions for Linux](#environment-setup-instructions-for-linux)
+-[Environment Setup Instructions for Linux](#environment-setup-instructions-for-linux)
   -[Shortcuts](#shortcuts)
-  -[Code Editor](#code-editor)
   -[Homebrew](#homebrew)
   -[SSH Key](#ssh-key)
   -[Github](#github)
@@ -111,9 +110,9 @@ and clone all repositories from within the code directory:
       mkdir code
       cd ~/code
 
-      git clone git@github.com:explore-meps/meps-dev.git
-      git clone git@github.com:explore-meps/meps-analytics.git
-      git clone git@github.com:explore-meps/meps-wiki.git
+      git clone git@github.com:explore-meps/meps_dev.git
+      git clone git@github.com:explore-meps/meps_analytics.git
+      git clone git@github.com:explore-meps/meps_wiki.git
     ```
 
 ## Python
@@ -189,7 +188,7 @@ To create new virtual environments, run the following in your terminal
 
 ## Dev Environment Aliases
 
-Add the following dev environment aliases to the bottom your .bashrc file to allow quick acess to repos.
+Add the following dev environment aliases to the bottom your .bashrc file to allow quick access to differnt virtual environments
 
     ```shell
       # dev environment aliases

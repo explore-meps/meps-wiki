@@ -6,12 +6,12 @@ The codebase is designed around Visual Studio Code (VScode), however it is not a
 
 ## Shortcuts
 
-- [Code Editors](#code-editors)
-  - [Shortcuts](#shortcuts)
-  - [Installation](#installation)
-  - [General Configuration](#general-configuration)
-  - [Extensions](#extensions)
-  - [Recommended Settings](#recommended-settings)
+  -[Code Editors](#code-editors)
+  -[Shortcuts](#shortcuts)
+  -[Installation](#installation)
+  -[General Configuration](#general-configuration)
+  -[Extensions](#extensions)
+  -[Recommended Settings](#recommended-settings)
 
 ---
 
@@ -29,7 +29,8 @@ If you're on an older Linux distribution, you will need to run this instead:
     ```shell
         # terminal
         sudo dpkg -i .deb
-        sudo apt-get install -f # Install dependencies
+        sudo apt-get install -f# Install dependencies
+
     ```
 
 Note that other binaries are also available on the VS Code download page.

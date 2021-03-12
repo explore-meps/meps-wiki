@@ -5,15 +5,15 @@ open-source web application that allows you to create and share documents that c
 visualizations and explanatory text. Uses include: data cleaning and transformation, numerical simulation,
 statistical modeling, machine learning and much more. These instructions are designed to be executed in order, and
 assume you have already walked through the
-[Developer Environment Setup Instructions for Linux](https://github.com/rossids/wiki/blob/master/software_development/dev_environment_setup.md#python-virtual-environment).
+[Environment Setup Instructions for Linux](setup/environment_setup.md).
 
 ## Starting a Notebook
 
-The expectation is that all notebooks will be kept in the **analytics** repository. Begin by nativigating to the
+The expectation is that all notebooks will be kept in the **meps-analytics** repository. Begin by nativigating to the
 analytics virtual environment and creating a new branch. From there you can launch the notebook app.
 
         ```shell
-            an
+            meps-an
             git checkout master
             git pull
             git checkout -b {name-of-new-branch}
@@ -21,8 +21,8 @@ analytics virtual environment and creating a new branch. From there you can laun
         ```
 
 This will launch a jupyter notebook server which will display the analytics repository. Most projects involving
-jupyter notebooks will be **research spikes**. A research spike is an experimental area where problems can be explored
-without the expectation of fully productized code. Navigate to the research spike folder and create a new folder with
+jupyter notebooks will be **research**. The research folder is an experimental area where problems can be explored
+without the expectation of fully productized code. Navigate to the research folder and create a new folder with
 the following format {year}_{month}_{short description of project}. Within that folder create your first notebook by
 clicking on the "New" button in the upper right corner of the screen and selecting "Python 3". This will open a new
 window where your analysis can begin.
@@ -30,8 +30,8 @@ window where your analysis can begin.
 ## Notebook Format
 
 The goal of notebooks is to allow for free form data exporation and rapid experimentation so the structure is much
-looser than fully productized code. Often research spikes will answer a self contained question and lead to new ones,
-or code in these notebooks will eventually become implemented in the product repository. Therefore a general structure
+looser than fully productized code. Often research will answer a self contained question and lead to new ones,
+or code in these notebooks will eventually become implemented in the development repository. Therefore a general structure
 is followed. Build a header using markdown in the first cell of your notebook by selecting it and pressing ESC. This
 will convert the cell from interpreting python to interpreting markdown. Header cells should be formatted as follows:
 
@@ -59,13 +59,15 @@ things in our notebook. All of this can be done in the imports cell. If you want
 the following code in you imports:
 
     ```python
-    # allows imports from the product repor
-    import sys
-    sys.path.append('/home/mike/code/product/')
-
-    # points to the project setting file
+    # allows imports from the dev repo
     import os
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nba_project.settings")
+    from os.path import expanduser
+
+    import sys
+    sys.path.append(os.path.join(expanduser("~"), "meps", "meps_dev"))
+    # points to the project setting file
+
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "meps_db.settings")
     os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 
     import django
@@ -76,5 +78,5 @@ Now that we have that we can import classes and methods from the product repo, b
 Models from our database as simply as:
 
     ```python
-    from nba.models import Game
+    from meps_db.components.models.dental_visits_models import DentalVisits18
     ```
