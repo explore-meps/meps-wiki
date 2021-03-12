@@ -4,4 +4,4 @@
 ## Contents
 
 - Development
-  - [Code Editors](code_editors.md)
+  - [Code Editors](setup/code_editor.md)
