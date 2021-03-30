@@ -1,6 +1,6 @@
 # Explore-MEPS
 
-This Repository is intended for researchers who would like to explore the [Medical Expenditure Panel Survey](https://www.meps.ahrq.gov/mepsweb/index.jsp) (MEPS) using Python.
+This repository is intended for researchers who would like to explore the [Medical Expenditure Panel Survey](https://www.meps.ahrq.gov/mepsweb/index.jsp) (MEPS) using Python.
 
 ## Why?
 
